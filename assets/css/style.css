@@ -1,3 +1,18 @@
+body {
+    background-image: url(/assets/images/background.jpg);
+}
+
+/* Header */
+header {
+    font-family: 'Rubik Iso', cursive;
+    font-size: 370%;
+    text-align: center;
+    color: rgb(21, 200, 203);
+    letter-spacing: 0.2em;
+}
+
+
+/* Related to RWD Grid View */
 * {
   box-sizing: border-box;
 }
