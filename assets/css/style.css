@@ -4,12 +4,40 @@ body {
 
 /* Header */
 header {
-    font-family: 'Rubik Iso', cursive;
-    font-size: 370%;
-    text-align: center;
-    color: rgb(21, 200, 203);
-    letter-spacing: 0.2em;
+  font-family: 'Rubik Iso', cursive;
+  letter-spacing: 0.2em;
+  opacity: 0.7;
 }
+
+.header1 {
+  font-family: 'Rubik Iso', cursive;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+
+  text-align: center;
+  font-size: 700%;
+  margin: 0 auto;
+  color: rgb(14, 231, 54);
+}
+
+.header2 {
+  font-family: 'Rubik Iso', cursive;
+  letter-spacing: 0.2em;
+  opacity: 0.8;
+
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin: 0 auto;
+  font-size: 190%;
+}
+
+span {
+  color: black;
+}
+
+  .container {
+    display: flex;
+  }
 
 
 /* Related to RWD Grid View */
@@ -26,7 +54,7 @@ header {
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-  border: 1px solid red;
+  borde33r: 1px solid red;
 }
 
 @media only screen and (min-width: 600px) {
