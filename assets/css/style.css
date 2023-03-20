@@ -17,7 +17,7 @@ header {
   text-align: center;
   font-size: 700%;
   margin: 0 auto;
-  color: rgb(14, 231, 54);
+  color: rgb(121, 255, 32);
 }
 
 .header2 {
@@ -26,18 +26,70 @@ header {
   opacity: 0.8;
 
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.525);
   margin: 0 auto;
   font-size: 190%;
 }
 
 span {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
   .container {
     display: flex;
   }
+
+
+/* Dropdown Rules Button */
+.dropbtn {
+  background-color: #f1f1f1;
+  color: aqua;
+  padding: 16px;
+  font-size: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: aqua;
+}
+
+/* The container <div> - to position dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Rules Dropdown Content */
+.dropdown-content h2, .dropdown-content p {
+  color: #f1f1f1;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.if {
+  color: red;
+}
+
+/* Change colo of dropdown on hover */
+.dropdown-content:hover {
+  background-color: aqua;
+}
+
+
+
 
 
 /* Related to RWD Grid View */
