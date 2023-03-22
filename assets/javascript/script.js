@@ -1,3 +1,4 @@
+// Start quiz button 
 let startQuiz = document.getElementById("start-quiz");
 let questionContainer = document.getElementById("question-container");
 const answers = document.getElementsByClassName('answer-button');
@@ -102,6 +103,7 @@ let questions = [{
     },
 ];
 
+// To get a random question 
 function getNextQuestion() {
     currentQuestionIndex = Math.floor(Math.random() * (questions.length - 1));
     currentQuestion = questions[currentQuestionIndex];
@@ -116,7 +118,7 @@ function displayQuestion(questionObject) {
 }
 
 
-
+// Start quiz click function
 startQuiz.addEventListener("click", function () {
     startQuiz.style.display = "none";
     questionContainer.style.display = "block";
@@ -124,32 +126,48 @@ startQuiz.addEventListener("click", function () {
     displayQuestion(currentQuestion);
 });
 
-for (var i = 0; i < answers.length; i++) {
-    const answer = answers[i];
-    answer.addEventListener('click', function () {
-        // Check the answer and update score
-let currentQuestion = 0;
+// Check the answer and update score
 let score = 0;
 
 function loadQuestion() {
     const question = quizData[currentQuestion];
 
-    document.getElementById("questionNum").textContent = currentQuestion + 1;
+    document.getElementById("question-num").textContent = currentQuestion + 1;
     document.getElementById("question").textContent = question.question;
     document.getElementById("button0").textContent = question.answers[0];
     document.getElementById("button1").textContent = question.answers[1];
     document.getElementById("button2").textContent = question.answers[2];
 }
 
+// Check answer function
 function CheckAnswer(answer) {
     const question = quizData[currentQuestion];
 
     if (answer === question.correct) {
         score++;
         document.getElementsByClassName("score")[0].textContent = "Right Answers: " + score;
+    } else {
+        document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (currentQuestion + 1 - score);
+    }
+
+    currentQuestion++;
+    if (currentQuestion < quizData.length) {
+        loadQuestion();
+    } else {
+        document.getElementById("question-container").style.display = "none";
+        document.getElementsByClassName("score-container")[0].style.display = "none";
+        document.getElementsByClassName("score-container")[1].style.display = "none";
+
+        const result = document.createElement("p");
+        result.textContent = "You got" + score + "out of" + quizData.length + "questions right!";
+        document.getElementById("start-quiz").parentNode.appendChild(result);
     }
 }
-// avoid repeated questions
+
+for (var i = 0; i < answers.length; i++) {
+    const answer = answers[i];
+    answer.addEventListener('click', function () {
+        // avoid repeated questions
         getNextQuestion();
         displayQuestion(currentQuestion);
 
