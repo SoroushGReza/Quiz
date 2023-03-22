@@ -47,7 +47,7 @@ span {
   height: 100px;
 }
 
-#startQuiz {
+#start-quiz {
   font-size: 4rem;
   font-family: Cinzel Decorative;
   padding: 1rem 2rem;
@@ -58,10 +58,36 @@ span {
   cursor: pointer;
 }
 
-#startQuiz:hover {
+#start-quiz:hover {
   background: linear-gradient(45deg, #208638, #000000);
 }
 
+/* Qestion Container */
+#question-container {
+  margin: 0 auto;
+  border: none;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 120%;
+  margin-bottom: 10px;
+}
+
+/* Answer Button */
+button.answer-button {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid red;
+  color: #000000;
+  font-size: 130%;
+  text-align: left;
+}
+
+button-answer-button:hover {
+  background-color: #208638;
+}
 
 
 
