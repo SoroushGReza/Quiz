@@ -34,6 +34,7 @@ function displayQuestion(questionObject){
     document.getElementById('button2').innerText = questionObject.answers[2];
 }
 
+commit fix
 
 
 
