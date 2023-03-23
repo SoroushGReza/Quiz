@@ -178,7 +178,7 @@ tryAgainButton.addEventListener("click", function () {
     tryAgainButton.style.display = "none";
 });
 
-
+COMMIT
 
 for (let i = 0; i < answers.length; i++) {
     answers[i].addEventListener('click', function () {
