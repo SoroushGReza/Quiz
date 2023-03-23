@@ -4,6 +4,7 @@ let questionContainer = document.getElementById("question-container");
 const answers = document.getElementsByClassName('answer-button');
 let currentQuestionIndex = 0;
 let currentQuestion = {};
+let tryAgainButton = document.getElementById("try-again");
 
 /* Questions and answers */
 let questions = [{
@@ -143,6 +144,7 @@ function loadQuestion() {
 // Check answer function
 function checkAnswer(answer) {
     totalQuestionsAnswered++;
+
     if (answer === currentQuestion.correctAnswer) {
         score++;
         document.getElementsByClassName("score")[0].textContent = "Right Answers: " + score;
@@ -153,13 +155,29 @@ function checkAnswer(answer) {
     if (totalQuestionsAnswered >= 5) {
         if (score === 5) {
             alert("CONGRATS!");
-        } else
-        alert("SORRY!");
+        } else {
+            alert("SORRY!");
+        }
+        // Show the "Try Again" button
+        tryAgainButton.style.display = "block";
+    } else {
+        getNextQuestion();
+        displayQuestion(currentQuestion);
     }
-
+}
+tryAgainButton.addEventListener("click", function () {
+    // Reset the quiz
+    score = 0;
+    totalQuestionsAnswered = 0;
+    document.getElementsByClassName("score")[0].textContent = "Right Answers: " + score;
+    document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (totalQuestionsAnswered - score);
     getNextQuestion();
     displayQuestion(currentQuestion);
-}
+
+    // Hide the "Try Again" button
+    tryAgainButton.style.display = "none";
+});
+
 
 
 for (let i = 0; i < answers.length; i++) {
