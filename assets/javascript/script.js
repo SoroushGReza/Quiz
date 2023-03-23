@@ -128,9 +128,10 @@ startQuiz.addEventListener("click", function () {
 
 // Check the answer and update score
 let score = 0;
+let totalQuestionsAnswered = 0;
 
 function loadQuestion() {
-    const question = quizData[currentQuestion];
+    const question = questions[currentQuestionIndex];
 
     document.getElementById("question-num").textContent = currentQuestion + 1;
     document.getElementById("question").textContent = question.question;
@@ -140,33 +141,24 @@ function loadQuestion() {
 }
 
 // Check answer function
-function CheckAnswer(answer) {
-    const question = quizData[currentQuestion];
-
-    if (answer === question.correct) {
+function checkAnswer(answer) {
+    totalQuestionsAnswered++;
+    if (answer === currentQuestion.correctAnswer) {
         score++;
         document.getElementsByClassName("score")[0].textContent = "Right Answers: " + score;
     } else {
-        document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (currentQuestion + 1 - score);
+        document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (totalQuestionsAnswered - score);
     }
 
-    currentQuestion++;
-    if (currentQuestion < quizData.length) {
-        loadQuestion();
-    } else {
-        document.getElementById("question-container").style.display = "none";
-        document.getElementsByClassName("score-container")[0].style.display = "none";
-        document.getElementsByClassName("score-container")[1].style.display = "none";
-
-        const result = document.createElement("p");
-        result.textContent = "You got" + score + "out of" + quizData.length + "questions right!";
-        document.getElementById("start-quiz").parentNode.appendChild(result);
-    }
+    getNextQuestion();
+    displayQuestion(currentQuestion);
 }
 
-for (var i = 0; i < answers.length; i++) {
-    const answer = answers[i];
-    answer.addEventListener('click', function () {
+
+for (let i = 0; i < answers.length; i++) {
+    answers[i].addEventListener('click', function () {
+        checkAnswer(i);
+
         // avoid repeated questions
         getNextQuestion();
         displayQuestion(currentQuestion);
