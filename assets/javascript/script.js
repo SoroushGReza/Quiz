@@ -150,6 +150,13 @@ function checkAnswer(answer) {
         document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (totalQuestionsAnswered - score);
     }
 
+    if (totalQuestionsAnswered >= 5) {
+        if (score === 5) {
+            alert("CONGRATS!");
+        } else
+        alert("SORRY!");
+    }
+
     getNextQuestion();
     displayQuestion(currentQuestion);
 }
