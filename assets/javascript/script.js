@@ -207,6 +207,20 @@ tryAgainButton.addEventListener("click", function () {
 
 for (let i = 0; i < answers.length; i++) {
     answers[i].addEventListener('click', function () {
+
+        // Store default background color of answers container
+        let defaultBackgroundColor = answers[i].style.backgroundColor;
+
+        // To Check the answer and set new background color according to answer
+        if (i === currentQuestion.correctAnswer) {
+            answers[i].style.backgroundColor = "green";
+        } else {
+            answers[i].style.backgroundColor = "red";
+        }
+        // To set the time before background color changes back to defaukt
+        setTimeout(function() {
+            answers[i].style.backgroundColor = defaultBackgroundColor;
+        }, 1000)
         checkAnswer(i);
 
 
