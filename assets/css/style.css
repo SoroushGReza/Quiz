@@ -89,6 +89,26 @@ button-answer-button:hover {
   background-color: #208638;
 }
 
+/* Try again button */
+#try-again {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 4rem;
+  font-family: Cinzel Decorative;
+  padding: 1rem 2rem;
+  background-color: rgb(194, 26, 26);
+  color: #ffffff;
+
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#try-again:hover {
+  background: linear-gradient(45deg, #940f0f, #000000);
+}
+
 
 
 /* Related to RWD Grid View */
