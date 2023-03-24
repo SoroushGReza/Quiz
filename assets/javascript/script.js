@@ -168,6 +168,10 @@ function checkAnswer(answer) {
     }
 }
 tryAgainButton.addEventListener("click", function () {
+
+    // Reset current question index
+    currentQuestionIndex = 0;
+
     // Reset the quiz
     score = 0;
     totalQuestionsAnswered = 0;
@@ -178,6 +182,8 @@ tryAgainButton.addEventListener("click", function () {
 
     // Hide the "Try Again" button
     tryAgainButton.style.display = "none";
+
+    questionContainer.style.display = "block";
 });
 
 for (let i = 0; i < answers.length; i++) {
