@@ -79,7 +79,7 @@ button.answer-button {
   display: block;
   margin-bottom: 10px;
   padding: 10px;
-  border: 1px solid red;
+  border: 1px solid rgb(34, 255, 0);
   color: #000000;
   font-size: 130%;
   text-align: left;
@@ -108,6 +108,24 @@ button-answer-button:hover {
 #try-again:hover {
   background: linear-gradient(45deg, #940f0f, #000000);
 }
+
+/* Score count */
+.score {
+  font-family: Cinzel Decorative;
+  color: white;
+  font-size: 120%;
+}
+
+#green {
+  color: #208638;
+  font-size: 200%;
+}
+
+#red {
+  color: red;
+  font-size: 200%;
+}
+
 
 
 
