@@ -158,6 +158,8 @@ function checkAnswer(answer) {
         } else {
             alert("SORRY!");
         }
+        // Hide the questions
+        questionContainer.style.display = "none";
         // Show the "Try Again" button
         tryAgainButton.style.display = "block";
     } else {
@@ -177,8 +179,6 @@ tryAgainButton.addEventListener("click", function () {
     // Hide the "Try Again" button
     tryAgainButton.style.display = "none";
 });
-
-COMMIT
 
 for (let i = 0; i < answers.length; i++) {
     answers[i].addEventListener('click', function () {

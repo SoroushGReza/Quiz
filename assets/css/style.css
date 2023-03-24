@@ -105,7 +105,7 @@ button-answer-button:hover {
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-  borde33r: 2px solid red;
+  border: 2px solid red;
 }
 
 @media only screen and (min-width: 600px) {
