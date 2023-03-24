@@ -104,10 +104,22 @@ let questions = [{
     },
 ];
 
+// New array to store removed questions 
+let removedQuestions = [];
+
+
 // To get a random question 
 function getNextQuestion() {
+  if (questions.length === 0) {
+    return;
+  }
+  
     currentQuestionIndex = Math.floor(Math.random() * (questions.length - 1));
     currentQuestion = questions[currentQuestionIndex];
+  
+  // Move current question to removed questions array
+  removedQuestions.push(currentQuestion);
+  questions.splice(currentQuestionIndex, 1);
 }
 
 
@@ -163,6 +175,7 @@ function checkAnswer(answer) {
         // Show the "Try Again" button
         tryAgainButton.style.display = "block";
     } else {
+            // avoid repeated questions
         getNextQuestion();
         displayQuestion(currentQuestion);
     }
@@ -179,6 +192,12 @@ tryAgainButton.addEventListener("click", function () {
     document.getElementsByClassName("score")[1].textContent = "Wrong Answers: " + (totalQuestionsAnswered - score);
     getNextQuestion();
     displayQuestion(currentQuestion);
+  
+  // Add removed questions back in questions array
+  questions = questions.concat(removedQuestions);
+  
+  // Reset the array
+  removedQuestions = [];
 
     // Hide the "Try Again" button
     tryAgainButton.style.display = "none";
@@ -190,9 +209,6 @@ for (let i = 0; i < answers.length; i++) {
     answers[i].addEventListener('click', function () {
         checkAnswer(i);
 
-        // avoid repeated questions
-        getNextQuestion();
-        displayQuestion(currentQuestion);
 
     });
 }
