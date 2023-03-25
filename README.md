@@ -1,8 +1,10 @@
 # Quiz 
-Direct link to the site for the quiz. [Link to Page](PUT LINK HERE)<br><br>
+* [Direct link to the Quiz website](https://soroushgreza.github.io/Quiz/)<br>
+* [Link to Repo](https://github.com/SoroushGReza/Quiz) <br> <br>
 
 ## Description
-Here you can find all neccesary information about the Quiz.<br>
+This is a quiz, where you can put your coding knowledge to test, in a fun way. <br> 
+This quiz is at beginner difficulty level.<br>
 
 ## Dependencies
 No need to install anything. Just visit the site on your mobile, tablet or computer. <br><br>
@@ -16,14 +18,14 @@ Soroush Gholamreza
 
 # Credits <br>
 
+
 ## Content 
 
 
 ## Media
 
-
-## Proving knowledge
-
+### Images
+* The background image was taken from [Canva](https://www.canva.com/sv_se/)
 
 ## License
 This project is license free.
@@ -32,11 +34,10 @@ This project is license free.
 # User experience (UX): <br>
 
 ## User Stories
-🔲
-🔲
-🔲 
-🔲 
-🔲
+🔲 As a user, I want to be able to navigate through the page.
+🔲 As a user, I want to be able to start the quiz.
+🔲 As a user, I want to be able to see my scores, and to know if my answer was correct or incorrect when answering a question.
+🔲 As a user, I want to be able to restart the quiz when I am done.
 
 ## Changes that could be made to make website more user friendly could be: 
 
@@ -46,6 +47,7 @@ In this section, we will discuss the design considerations for the project. <br>
 
 ## Methodology
 Styling of "Start Quiz" button was a method learned at: [W3Schools -CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp) <br><br>
+
 ## Color Scheme <br>
 The following color scheme was used for the project:
 ![Color Scheme Image](IMAGE URL HERE)
@@ -74,30 +76,40 @@ Overall, the design choices were made with the goal of creating a professional a
 The errors and warnings that was validated:
 
 ##  Warnings: <br>
+* Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. <br>
+- Deleted section where no heading where needed. (Warning resolved). <br> <br>
+
+* Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. <br>
+- Deleted section where no heading where needed. (Warning resolved). <br> <br>
 
 
 ## Errors: <br>
-
+* Error: Stray end tag div. 
+* div end tag removed (Error resolved).
 
 # Testing <br>
 ## Validating <br>
 Following websites were used to check my code for syntax errors: <br>
 HTML - https://validator.w3.org/<br>
-CSS - https://jigsaw.w3.org/css-validator/ <br><br>
+CSS - https://jigsaw.w3.org/css-validator/ <br>
+JavaScript - https://esprima.org/demo/validate.html<br>
+
+All warnings and errors, checked and resolved.
+
 
 ## Testing User Stories <br>
 
-🔲 <br>
-☑️ <br><br>
+🔲 As a user, I want to be able to navigate through the page.<br>
+☑️ The page is a simple interactive Quiz for beginner level programmers. When the page loads, at the header of the page you see a big "QUIZ" logo, a text in the that provides the knowledge of what the quiz is about.  <br><br>
 
-🔲 <br>
-☑️ <br><br>
+🔲 As a user, I want to be able to start the quiz.<br>
+☑️ A big "Start Quiz" button is seen on the page, that makes is easy to start the quiz right away.<br><br>
 
-🔲 <br>
-☑️ <br><br>
+🔲 As a user, I want to be able to see my scores, and to know if my answer was correct or incorrect when answering a question.<br>
+☑️ In the bottom of the page, we will find the score board where the correct / wrong answers are counted.<br><br>
 
-🔲 <br>
-☑️ <br><br>
+🔲 As a user, I want to be able to restart the quiz when I am done.<br>
+☑️ When yous have answered all the questions a big "Try Again" button will appear taht restarts the quiz and resetting the scores to 0.<br><br>
 
 # Further Testing <br>
 ## Personal Testing <br>
@@ -123,7 +135,7 @@ Through devices that I have at home available to me:
 
 ## Deployment through GitHub Pages <br>
 1. Log into GitHub.
-2. Locate the [@repository](URL FOR REPO HERE).
+2. Locate the [repository](https://github.com/SoroushGReza/Quiz).
 3. Locate the settings option along the options bar.
 4. Locate Pages options on the left side of the page.
 5. In 'Source' dropdown, select 'Main' from the branch options.
@@ -134,7 +146,7 @@ Through devices that I have at home available to me:
 
 ## Cloning project <br>
 1. Log into GitHub.
-2. Locate the [@repository](URL FOR REPO HERE).
+2. Locate the [repository](https://github.com/SoroushGReza/Quiz).
 3. Click the 'Code' dropdown above the file list.
 4. Copy the URL for the repository.
 5. Open Git Bash on your device.

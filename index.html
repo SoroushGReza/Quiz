@@ -25,52 +25,44 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div class="row">
-                <div class="col-12 col-s-12">
-                    <h1 class="header1">QUiZ</h1>
-                    <h2 class="header2">Let's see what you learned <span>about coding so far...</span></h2>
+
+    <header>
+        <div class="row">
+            <div class="col-12 col-s-12">
+                <h1 class="header1">QUiZ</h1>
+                <h2 class="header2">Let's see what you learned <span>about coding so far...</span></h2>
+            </div>
+        </div>
+    </header>
+
+    <br><br> <br> <br> <br> <br>
+
+    <section>
+        <div class="row">
+            <div class="col-12 col-s-12 button-container">
+                <button id="start-quiz">Start Quiz</button>
+                <button id="try-again" style="display: none;">Try Again</button>
+                <div class="col-12 col-s-12" id="question-container" style="display: none;">
+                    <br> <br> <br> <br>
+                    <h2>Question</h2>
+                    <p id="question"></p>
+                    <button class="answer-button" id="button0"></button>
+                    <button class="answer-button" id="button1"></button>
+                    <button class="answer-button" id="button2"></button>
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <br><br> <br> <br>
-
-        <section>
-            <div class="row">
-                <div class="col-12 col-s-12 button-container">
-                    <button id="start-quiz">Start Quiz</button>
-                    <button id="try-again" style="display: none;">Try Again</button>
-                    <div class="col-12 col-s-12" id="question-container" style="display: none;">
-                        <br> <br> <br> <br>
-                        <h2>Question</h2>
-                        <p id="question"></p>
-                        <button class="answer-button" id="button0"></button>
-                        <button class="answer-button" id="button1"></button>
-                        <button class="answer-button" id="button2"></button>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="score-container">
+            <div class="col-12 col-s-12">
+                <p class="score" id="score-right">Right Answers: 0</p>
+                <p class="score" id="score-wrong">Wrong Answers: 0</p>
             </div>
-        </section>
-
-        <section>
-            <div class="row">
-                
-            </div>
-        </section>
-
-        <section>
-            <div class="row">
-                <div class="score-container">
-                    <div class="col-12 col-s-12">
-                        <p class="score" id="score-right">Right Answers: 0</p>
-                        <p class="score" id="score-wrong">Wrong Answers: 0</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
+
 
     <script src="/assets/javascript/script.js"></script>
 </body>
