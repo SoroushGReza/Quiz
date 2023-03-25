@@ -14,47 +14,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
 
     <title>Let's Quiz</title>
 
 </head>
 
 <body>
-    <header>
-        <div class="row">
-            <div class="col-12 col-s-12">
-                <h1 class="header1">QUiZ</h1>
+    <div class="wrapper">
+        <header>
+            <div class="row">
+                <div class="col-12 col-s-12">
+                    <h1 class="header1">QUiZ</h1>
+                    <h2 class="header2">Let's see what you learned <span>about coding so far...</span></h2>
+                </div>
             </div>
+        </header>
 
-            <div>
-                <h2 class="header2">Let's see what you learned <span>about coding so far...</span></h2>
-            </div>
-        </div>
-    </header>
+        <br><br><br>
 
-    <br><br><br>
-
-    <section>
-        <div class="row">
-            <div class="col-12 col-s-12 button-container">
-                <button id="start-quiz">Start Quiz</button>
-                <div id="question-container" style="display: none;">
-                    <h2>Question <span id="question-num"></span></h2>
-                    <p id="question"></p>
-                    <button class="answer-button" id="button0"></button>
-                    <button class="answer-button" id="button1"></button>
-                    <button class="answer-button" id="button2"></button>
-                    <div class="score-container">
-                        <p class="score">Right Answers: <span id="green">0</span></p>
-                        <p class="score">Wrong Answers: <span id="red">0</span></p>
+        <section>
+            <div class="row">
+                <div class="col-12 col-s-12 button-container">
+                    <button id="start-quiz">Start Quiz</button>
+                    <button id="try-again" style="display: none;">Try Again</button>
+                    <div class="col-12 col-s-12" id="question-container" style="display: none;">
+                        <br> <br> <br> <br>
+                        <h2>Question</h2>
+                        <p id="question"></p>
+                        <button class="answer-button" id="button0"></button>
+                        <button class="answer-button" id="button1"></button>
+                        <button class="answer-button" id="button2"></button>
                     </div>
                 </div>
-              <button id="try-again" style="display: none;">Try Again</button>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section>
+            <div class="row">
+                
+            </div>
+        </section>
+
+        <section>
+            <div class="row">
+                <div class="score-container">
+                    <div class="col-12 col-s-12">
+                        <p class="score" id="score-right">Right Answers: 0</p>
+                        <p class="score" id="score-wrong">Wrong Answers: 0</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="/assets/javascript/script.js"></script>
 </body>

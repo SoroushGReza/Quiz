@@ -5,6 +5,7 @@ const answers = document.getElementsByClassName('answer-button');
 let currentQuestionIndex = 0;
 let currentQuestion = {};
 let tryAgainButton = document.getElementById("try-again");
+let buttonContainer = document.getElementById("button-container");
 
 /* Questions and answers */
 let questions = [{
@@ -134,6 +135,7 @@ function displayQuestion(questionObject) {
 // Start quiz click function
 startQuiz.addEventListener("click", function () {
     startQuiz.style.display = "none";
+    tryAgainButton.style.display = "none";
     questionContainer.style.display = "block";
     getNextQuestion();
     displayQuestion(currentQuestion);
@@ -202,7 +204,8 @@ tryAgainButton.addEventListener("click", function () {
     // Hide the "Try Again" button
     tryAgainButton.style.display = "none";
 
-    questionContainer.style.display = "block";
+    startQuiz.style.display = "block";
+    questionContainer.style.display = "none";
 });
 
 for (let i = 0; i < answers.length; i++) {

@@ -35,9 +35,6 @@ span {
   color: rgb(255, 255, 255);
 }
 
-.container {
-  display: flex;
-}
 
 /* Start Quiz Button */
 .button-container {
@@ -67,22 +64,42 @@ span {
   margin: 0 auto;
   border: none;
   padding: 20px;
+  text-align: center;
 }
 
 h2 {
-  font-size: 120%;
+  font-size: 240%;
   margin-bottom: 10px;
+  font-family: Cinzel Decorative;
+  text-align: center;
+  color: greenyellow;
+  opacity: 0.4;
+
 }
 
 /* Answer Button */
-button.answer-button {
-  display: block;
-  margin-bottom: 10px;
+.answer-button {
+  display: inline;
+  margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid rgb(34, 255, 0);
-  color: #000000;
-  font-size: 130%;
-  text-align: left;
+
+  color: #ffffff;
+  font-size: 140%;
+}
+
+#button0, #button1, #button2 {
+  background-color: #000000;
+  opacity: 0.6;
+  margin: 10px;
+  text-align: center;
+  display: inline-flex;
+}
+
+#question {
+  font-family: 'Alkatra', cursive;
+  font-size: 230%;
+  text-align: center;
+  color: #ffffff;
 }
 
 button-answer-button:hover {
@@ -110,21 +127,36 @@ button-answer-button:hover {
 }
 
 /* Score count */
-.score {
+#score-right {
   font-family: Cinzel Decorative;
   color: white;
-  font-size: 120%;
-}
-
-#green {
+  font-size: 180%;
   color: #208638;
-  font-size: 200%;
+  opacity: 0.7;
 }
 
-#red {
-  color: red;
-  font-size: 200%;
+#score-wrong {
+  font-family: Cinzel Decorative;
+  color: white;
+  font-size: 180%;
+  color: #ff0000;
+  opacity: 0.7;
 }
+
+#score-right, #score-wrong {
+  margin: 4%;
+  text-align: center;
+}
+
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
 
 
 
@@ -143,7 +175,6 @@ button-answer-button:hover {
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-  border: 2px solid red;
 }
 
 @media only screen and (min-width: 600px) {
