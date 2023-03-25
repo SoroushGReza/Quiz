@@ -26,6 +26,7 @@ Soroush Gholamreza
 
 ### Images
 * The background image was taken from [Canva](https://www.canva.com/sv_se/)
+* The compression of background image was done at [Compressjpeg](https://compressjpeg.com/)
 
 ## License
 This project is license free.
