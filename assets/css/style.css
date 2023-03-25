@@ -116,7 +116,7 @@ button-answer-button:hover {
 /* Try again button */
 #try-again {
   height: 100px;
-  font-size: 4rem;
+  font-size: 2rem;
   font-family: Cinzel Decorative;
   padding: 1rem 2rem;
   background-color: rgb(194, 26, 26);
@@ -142,7 +142,7 @@ button-answer-button:hover {
 #score-wrong {
   font-family: Cinzel Decorative;
   color: white;
-  font-size: 180%;
+  font-size: 150%;
   color: #ff0000;
   opacity: 0.7;
 }

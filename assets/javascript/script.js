@@ -205,8 +205,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         // Hide the "Try Again" button
         tryAgainButton.style.display = "none";
 
-        startQuiz.style.display = "block";
-        questionContainer.style.display = "none";
+        startQuiz.style.display = "none";
+        questionContainer.style.display = "block";
     });
 
     for (let i = 0; i < answers.length; i++) {
