@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,15 +27,12 @@
         </div>
     </header>
 
-    <br><br> <br> <br> <br> <br>
-
     <section>
         <div class="row">
-            <div class="col-12 col-s-12 button-container">
+            <div class="col-12 col-s-12" id="question-holder">
                 <button id="start-quiz">Start Quiz</button>
                 <button id="try-again" style="display: none;">Try Again</button>
                 <div class="col-12 col-s-12" id="question-container" style="display: none;">
-                    <br> <br> <br> <br>
                     <h2>Question</h2>
                     <p id="question"></p>
                     <button class="answer-button" id="button0"></button>
@@ -46,18 +42,17 @@
             </div>
         </div>
     </section>
-
-    <div class="row">
-        <div class="score-container">
-            <div class="col-12 col-s-12">
+    <section>
+        <div class="row">
+            <div class="col-12 col-s-12" id="answer-holder">
                 <p class="score" id="score-right">Right Answers: 0</p>
                 <p class="score" id="score-wrong">Wrong Answers: 0</p>
             </div>
         </div>
-    </div>
+    </section>
 
 
-    <script src="/assets/javascript/script.js"></script>
+    <script src="./assets/javascript/script.js"></script>
 </body>
 
 </html>

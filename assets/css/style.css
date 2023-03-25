@@ -1,5 +1,6 @@
 body {
   background-image: url(/assets/images/background.jpg);
+  overflow-x: hidden;
 }
 
 /* Header */
@@ -15,7 +16,7 @@ header {
   opacity: 0.8;
 
   text-align: center;
-  font-size: 700%;
+  font-size: 600%;
   margin: 0 auto;
   color: rgb(121, 255, 32);
 }
@@ -26,7 +27,7 @@ header {
   opacity: 0.8;
 
   text-align: center;
-  color: rgba(255, 255, 255, 0.525);
+  color: rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   font-size: 190%;
 }
@@ -35,6 +36,9 @@ span {
   color: rgb(255, 255, 255);
 }
 
+#question-holder{
+  text-align: center;
+}
 
 /* Start Quiz Button */
 .button-container {
@@ -45,20 +49,23 @@ span {
 }
 
 #start-quiz {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: Cinzel Decorative;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: rgb(93, 150, 37);
   color: #ffffff;
-
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 #start-quiz:hover {
   background: linear-gradient(45deg, #208638, #000000);
 }
 
+#answer-holder{
+  background-color: rgba(0,0,0,0.7);
+}
 /* Qestion Container */
 #question-container {
   margin: 0 auto;
@@ -108,18 +115,15 @@ button-answer-button:hover {
 
 /* Try again button */
 #try-again {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100px;
   font-size: 4rem;
   font-family: Cinzel Decorative;
   padding: 1rem 2rem;
   background-color: rgb(194, 26, 26);
   color: #ffffff;
-
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 #try-again:hover {
