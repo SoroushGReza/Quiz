@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let currentQuestion = {};
             let tryAgainButton = document.getElementById("try-again");
             let buttonContainer = document.getElementById("button-container");
-            let instructionsButton = document.getElementById("instructionsButton");
-            let instructionsContent = document.getElementById("instructionsContent");
+            let instructionsButton = document.getElementById("instructions-button");
+            let instructionsContent = document.getElementById("instructions-content");
 
             // Instructions button event listener
             instructionsButton.addEventListener("click", function () {

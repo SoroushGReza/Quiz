@@ -42,9 +42,38 @@ span {
   display: none;
 }
 
-#instructionsContent {
-  margin-top: 20px;
+#instructions-button {
+  font-size: 1rem;
+  font-family: Cinzel Decorative;
+  padding: 0.5rem 1rem;
+  background-color: rgb(93, 150, 37);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
 }
+
+#h-t-p {
+  color: rgb(17, 0, 255);
+  opacity: 0.8;
+}
+
+#instructions-content {
+  margin-top: 20px;
+  font-family: 'Comfortaa', cursive;
+  font-size: 45%;
+
+}
+
+.green {
+  color: #208638;
+}
+
+.red {
+  color: #ff0000;
+}
+
+
 
 /* Question holder */
 #question-holder{
@@ -113,6 +142,7 @@ h2 {
   display: inline-flex;
 }
 
+/* Question */
 #question {
   font-family: 'Alkatra', cursive;
   font-size: 230%;
