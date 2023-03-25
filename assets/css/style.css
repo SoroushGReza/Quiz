@@ -36,6 +36,17 @@ span {
   color: rgb(255, 255, 255);
 }
 
+
+/* Instructions button & content */
+.hidden {
+  display: none;
+}
+
+#instructionsContent {
+  margin-top: 20px;
+}
+
+/* Question holder */
 #question-holder{
   text-align: center;
 }
