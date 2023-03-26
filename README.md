@@ -47,7 +47,9 @@ This project is license free.
 In this section, we will discuss the design considerations for the project. <br><br>
 
 ## Methodology
-Styling of "Start Quiz" button was a method learned at: [W3Schools -CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp) <br><br>
+* Styling of "Start Quiz" button was a method learned at: [W3Schools - CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp) <br>
+* To prevent propagation of the same event from being called, was a method learned at:  [W3Schools - stopPropagation](https://www.w3schools.com/jsref/event_stoppropagation.asp)
+
 
 ## Color Scheme <br>
 The following color scheme was used for the project:
