@@ -15,9 +15,18 @@ Soroush Gholamreza
 <br> <br>
 
 # Responsiveness
+![Responsive](/assets/images/Responsive.png)
+You can check the responsiveness at: [UI](https://ui.dev/amiresponsive?url=https://soroushgreza.github.io/Quiz/) <br> <br>
 
 # Credits <br>
+## I want like to show my appreciation to respective websites and individuals: <br>
+* Antonio Rodrigues - My mentor that helped me whenever I was stuck during the project. <br>
+* [W3Schools](https://www.w3schools.com/) - For prowing me with the knowledge of different methods used in this project. <br>
+* [OpenAI](https://openai.com/blog/chatgpt) - When my imagination was lacking, ChatGPT helped me to generate the questions for the quiz. <br> <br>
 
+## Methodology
+* Styling of "Start Quiz" button was a method learned at: [W3Schools - CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp) <br>
+* To prevent propagation of the same event from being called, was a method learned at:  [W3Schools - stopPropagation](https://www.w3schools.com/jsref/event_stoppropagation.asp) <br> <br>
 
 ## Content 
 
@@ -35,25 +44,22 @@ This project is license free.
 # User experience (UX): <br>
 
 ## User Stories
-🔲 As a user, I want to be able to navigate through the page.
-🔲 As a user, I want to be able to start the quiz.
-🔲 As a user, I want to be able to see my scores, and to know if my answer was correct or incorrect when answering a question.
-🔲 As a user, I want to be able to restart the quiz when I am done.
+🔲 As a user, I want to be able to navigate through the page. <br>
+🔲 As a user, I want to be able to find instruction on how to play.  <br>
+🔲 As a user, I want to be able to start the quiz. <br>
+🔲 As a user, I want to be able to see my scores, and to know if my answer was correct or incorrect when answering a question. <br>
+🔲 As a user, I want to be able to restart the quiz when I am done. <br> <br>
 
 ## Changes that could be made to make website more user friendly could be: 
+* Adding further quiz themes and questions. 
 
 
 # Design <br>
 In this section, we will discuss the design considerations for the project. <br><br>
 
-## Methodology
-* Styling of "Start Quiz" button was a method learned at: [W3Schools - CSS Gradients](https://www.w3schools.com/css/css3_gradients.asp) <br>
-* To prevent propagation of the same event from being called, was a method learned at:  [W3Schools - stopPropagation](https://www.w3schools.com/jsref/event_stoppropagation.asp)
-
-
 ## Color Scheme <br>
 The following color scheme was used for the project:
-![Color Scheme Image](IMAGE URL HERE)
+![Color Scheme Image](/assets/images/color-scheme.png)
 
 ## Fonts <br>
 For this project, these fonts was selected: <br>
@@ -80,7 +86,7 @@ The errors and warnings that was validated:
 
 ##  Warnings: <br>
 * Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. <br>
-- Deleted section where no heading where needed. (Warning resolved). <br> <br>
+- Since everything functions as it should and I the sections give structure and makes code easier to read. I kept the sections (Warning NOT resolved). <br> <br>
 
 * Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. <br>
 - Deleted section where no heading where needed. (Warning resolved). <br> <br>
@@ -88,7 +94,7 @@ The errors and warnings that was validated:
 
 ## Errors: <br>
 * Error: Stray end tag div. 
-* div end tag removed (Error resolved).
+* div end tag removed (Error resolved). <br> <br>
 
 # Testing <br>
 ## Validating <br>
@@ -97,13 +103,16 @@ HTML - https://validator.w3.org/<br>
 CSS - https://jigsaw.w3.org/css-validator/ <br>
 JavaScript - https://esprima.org/demo/validate.html<br>
 
-All warnings and errors, checked and resolved.
+All errors, checked and resolved. 
 
 
 ## Testing User Stories <br>
 
 🔲 As a user, I want to be able to navigate through the page.<br>
 ☑️ The page is a simple interactive Quiz for beginner level programmers. When the page loads, at the header of the page you see a big "QUIZ" logo, a text in the that provides the knowledge of what the quiz is about.  <br><br>
+
+🔲 As a user, I want to be able to find instruction on how to play. <br>
+☑️ When pressing the "Instructions" button in the header, the content of it shows how the game is played, and what the rules are for passing / failing the quiz. <br><br>
 
 🔲 As a user, I want to be able to start the quiz.<br>
 ☑️ A big "Start Quiz" button is seen on the page, that makes is easy to start the quiz right away.<br><br>
