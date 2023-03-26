@@ -37,7 +37,7 @@ span {
 }
 
 
-/* Instructions button & content */
+/* Instructions button */
 .hidden {
   display: none;
 }
@@ -46,16 +46,27 @@ span {
   font-size: 1rem;
   font-family: Cinzel Decorative;
   padding: 0.5rem 1rem;
-  background-color: rgb(93, 150, 37);
+  background-color: #001aff;
+  
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 30px;
+  margin-top: 20px;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#instructions-button:hover {
+    background: linear-gradient(45deg, #001aff, #000000);
+}
+
+/* Instructions-content */
 #h-t-p {
   color: rgb(17, 0, 255);
   opacity: 0.8;
+  text-shadow: 1px 1px 1px rgb(255, 255, 255);
 }
 
 #instructions-content {
@@ -94,14 +105,16 @@ span {
 }
 
 #start-quiz {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: Cinzel Decorative;
   padding: 0.5rem 1rem;
   background-color: rgb(93, 150, 37);
+
   color: #ffffff;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 30px;
+  height: 110px;
 }
 
 #start-quiz:hover {
@@ -203,6 +216,11 @@ button-answer-button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
 }
 
 
