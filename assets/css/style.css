@@ -46,7 +46,7 @@ span {
   font-size: 1rem;
   font-family: Cinzel Decorative;
   padding: 0.5rem 1rem;
-  background-color: #001aff;
+  background-color: #1824ad;
   
   color: #ffffff;
   border-radius: 5px;
@@ -59,7 +59,7 @@ span {
 }
 
 #instructions-button:hover {
-    background: linear-gradient(45deg, #001aff, #000000);
+    background: linear-gradient(45deg, #1824ad, #000000);
 }
 
 /* Instructions-content */
@@ -76,7 +76,6 @@ span {
   text-align: cnter;
   background-color: rgba(0,0,0,0.7);
   color: #ffffff;
-
 }
 
 .green {
