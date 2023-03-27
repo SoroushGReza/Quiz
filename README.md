@@ -141,7 +141,7 @@ Through devices that I have at home available to me:
 
 # Accessibility <br>
 * Accessibility - Lighthouse result below: <br>
-<img> <br><br>
+![Lighthouse Result](/assets/images/lighthouse.png)<br><br>
 
 # Deployment <br>
 

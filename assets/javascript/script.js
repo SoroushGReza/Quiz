@@ -184,9 +184,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         if (totalQuestionsAnswered >= 5) {
             if (score === 5) {
-                alert("CONGRATS!");
+                alert("CONGRATS! You passed the quiz. :)");
             } else {
-                alert("SORRY!");
+                alert("Sorry, you did not pass. Feel free to try again!");
             }
             // Hide the questions
             questionContainer.style.display = "none";
@@ -239,7 +239,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             // To set the time before background color changes back to defaukt
             setTimeout(function () {
                 answers[i].style.backgroundColor = defaultBackgroundColor;
-            }, 1000)
+            }, 1000);
             checkAnswer(i);
 
 
